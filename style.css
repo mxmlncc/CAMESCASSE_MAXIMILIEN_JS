@@ -1,0 +1,239 @@
+* {
+    margin: 0; /*Marge*/
+    padding: 0; /*Padding*/
+    font-family: 'Edit Undo BRK', sans-serif; /*Police*/
+}
+
+
+
+
+
+
+
+
+
+
+.header {
+    border-left: 8px solid #f2372a; /*Bordure gauche*/
+    border-right: 8px solid #f2372a; /*Bordure droite*/
+    background-color: rgb(51, 51, 51); /*Couleur d'arrière plan*/
+    display: flex; /*Aligne les éléments dans le header*/
+    justify-content: space-between; /*Permet l'espace entre le menu et la nav*/
+    align-items: center; /*Permet de centrer la nav*/
+}
+
+.header button {
+    color: white; /* Couleur du texte */
+    padding: 20px; /* Espace autour du texte */
+    background-color: transparent; /* Transparent comme les liens */
+    font-size: 100%;
+    border: none; /* Supprime les bordures */
+    cursor: pointer; /* Change le curseur en pointeur */
+}
+
+.header a {
+    color: white; /*Couleur*/
+    padding: 20px; /*Pour ne pas coller le texte au bord*/
+    text-decoration: none; /*Enlève le surlignage des liens*/
+  }
+
+  .header.light-mode {
+    background-color: rgb(225, 225, 225);
+    color: rgb(51, 51, 51);
+}
+
+.header.light-mode button {
+    color: rgb(51, 51, 51);
+}
+
+.header.light-mode a {
+    color: rgb(51, 51, 51);
+}
+
+nav ul {
+    display: flex; /* Aligne les éléments horizontalement */
+    font-size: 120%; /* Taille de la police */
+    list-style-type: none; /* Supprime les puces */
+    margin: 0; /* Supprime les marges */
+    padding: 0; /* Supprime les paddings */
+    align-items: center; /* Aligne verticalement les éléments */
+}
+
+
+
+
+
+
+
+
+
+
+body {
+    display: flex; /*Aligne les éléments dans le body*/
+    flex-direction: column; /*Direction en colonne*/
+    background-image: url('Samourai_Arrière_plan.jpg'); /*Image d'arrière plan*/
+    background-size: cover; /*Toute l'image doit être visible*/
+    background-position: center; /*Centre l'arrière plan*/
+    background-attachment: fixed; /*L'arrière plan ne bouge pas au défilement*/
+    min-height: 100vh; /*L'image doit prendre toute la fenêtre*/
+}
+
+main {
+    display: flex; /*Aligne les éléments dans la colonne*/
+    justify-content: center; /*Centre la colonne*/
+    padding-bottom: 70px; /*Padding*/
+    margin-top: 70vh; /*Marge*/
+    margin-bottom: 20vh; /*Marge*/
+}
+
+.about {
+    display: flex; /*Aligne les éléments dans la colonne*/
+    justify-content: center; /*Centre la colonne*/
+    padding-bottom: 70px; /*Padding*/
+    margin-top: 0vh; /*Marge*/
+    margin-bottom: 20vh; /*Marge*/
+}
+
+.contact {
+        display: flex; /*Aligne les éléments dans la colonne*/
+        justify-content: center; /*Centre la colonne*/
+        padding-bottom: 70px; /*Padding*/
+}
+
+.colonne {
+    text-align: center; /*Centre le texte*/
+    padding: 40px; /*Pour ne pas coller le texte au bord*/
+    background-color: rgba(51, 51, 51, 0.75); /*Couleur d'arrière plan avec une opacité de 0.8*/
+    max-width: 85%; /*Limite la largeur pour qu'elle ne s'étende pas trop horizontalement*/
+    border-radius: 20px; /*Angle de bordure*/
+
+}
+
+.colonne h2 {
+    color:#f2372a; /*Couleur*/
+    font-size: 70px; /*Taille de la police*/
+    margin-bottom: 60px; /*Marge*/
+    margin-top: 20px; /*Marge*/
+}
+
+.colonne h3 {
+    color: gold; /*Couleur*/
+    font-size: 50px; /*Taille de la police*/
+    margin-bottom: 60px; /*Marge*/
+    margin-top: 60px; /*Marge*/
+}
+
+.colonne h4 {
+    color: white; /*Couleur*/
+    font-size: 40px; /*Taille de la police*/
+    margin-bottom: 40px; /*Marge*/
+}
+
+.colonne img {
+    height: auto; /*Hauteur de l'image*/
+    width: 100%; /*Largeur de l'image*/
+    margin-bottom: 60px; /*Marge*/
+    border-radius: 20px; /*Angle de bordure*/
+}
+
+.colonne p {
+    color: white; /*Couleur*/
+    font-size: 32px; /*Taille de la police*/
+    margin-bottom: 20px; /*Marge*/
+}
+
+.colonne.light-mode {
+    background-color: rgba(225, 225, 225, 0.75);
+}
+
+.colonne.light-mode h3 {
+    color: rgb(51, 51, 51);
+}
+
+.colonne.light-mode h4 {
+    color: rgb(51, 51, 51);
+}
+
+.colonne.light-mode p {
+    color: rgb(51, 51, 51);
+}
+
+.colonne.light-mode label {
+    color: rgb(51, 51, 51);
+}
+
+hr {
+    width: 50%; /*Largeur du hr*/
+    margin: 0 auto; /*Centre le hr*/
+    border: 2px solid white; /*Epaisseur du hr */
+}
+
+form {
+    display: flex; /*Aligne les éléments dans le form*/
+    flex-direction: column; /*Direction en colonne*/
+    max-width: 85%; /*Limite la largeur pour qu'elle ne s'étende pas trop horizontalement*/
+    margin: 0 auto; /*Centre le form */
+    padding-top: 20px; /*Padding*/
+    border-radius: 10px; /*Angle de bordure*/
+}
+
+form input, form textarea {
+    width: 100%; /*Largeur des inputs: Nom, Email et du textarea: Message*/
+    padding: 10px; /*Padding*/
+    margin-bottom: 20px; /*Marge*/
+    border: none; /*Supprime les bordures*/
+    border-radius: 5px; /*Angle de bordure*/
+    font-size: 18px; /*Taille de la police*/
+    background-color: rgba(255, 255, 255, 0.75); /*Couleur d'arrière plan avec une opacité de 0.75*/
+}
+
+.error-message {
+    color: #f2372a; /* Couleur rouge */
+    font-size: 16px; /* Taille du texte */
+    margin-top: -10px; /* Positionne en dessous des champs */
+    margin-bottom: 10px; /*Marge*/
+}
+
+form label {
+    color: rgb(255, 255, 255);
+    font-size: 20px; /* Taille de la police */
+    margin-bottom: 20px; /*Marge*/
+}
+
+form button {
+    padding: 15px; /*Padding*/
+    background-color: #f2372a; /*Couleur d'arrière plan*/
+    color: white; /*Couleur*/
+    font-size: 20px; /*Taille de la police*/
+    border: none; /*Supprime les bordures*/
+    border-radius: 5px; /*Angle de bordure*/
+}
+
+form button:hover {
+    background-color: gold; /*Couleur d'arrière plan*/
+    color: rgb(51, 51, 51); /*Couleur*/
+}
+
+
+
+
+
+
+
+
+
+
+footer {
+    color: gold; /*Couleur*/
+    border-left: 8px solid #f2372a; /*Bordure gauche*/
+    border-right: 8px solid #f2372a; /*Bordure droite*/
+    background-color: rgba(51, 51, 51, 0.75); /*Couleur d'arrière plan*/
+    text-align: center;  /*Centre le texte*/
+    padding: 20px; /*Pour ne pas coller le texte au bord*/
+    position: relative; /*Assure que le footer reste bien en bas de page*/
+}
+
+footer.light-mode {
+    background-color: rgb(225, 225, 225);
+    color: rgb(51, 51, 51);
+}
